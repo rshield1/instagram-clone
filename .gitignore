@@ -11,7 +11,7 @@
 # production
 /build
 #apikey
-
+/src/lib/firebase.js
 
 # misc
 .DS_Store
