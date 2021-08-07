@@ -12,6 +12,7 @@ export default function Post({ content }) {
     
     return (
         <div className="rounded col-span-4 border bg-white mb-16">
+            <Header username={content.username} />
             <Image src={content.imageSrc} caption={content.caption} />
             <Actions
                 docId={content.docId}
@@ -20,6 +21,12 @@ export default function Post({ content }) {
                 handleFocus={handleFocus}
             />
             <Footer username={content.username} caption={content.caption} />
+            <Comments
+                docId={content.docId}
+                comments={content.comments}
+                posted={content.dateCreated}
+                commentInput={commentInput}
+            />
         </div>
     )
 }
