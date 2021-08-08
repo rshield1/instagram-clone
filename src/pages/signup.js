@@ -58,7 +58,7 @@ export default function SignUp() {
             <div className="flex flex-col">
                 <div className="flex flex-col items-center bg-white p-4 border mb-4">
                     <h1 className="flex justify-center w-full">
-                        <img src="/images/logo.png" alt="Instagram" className="mt-2 w-6/12 mb-4" />
+                        <img src={require("../images/logo.png")} alt="Instagram" className="mt-2 w-6/12 mb-4" />
                     </h1>
                     {error && <p className="mb-4 text-xs text-red-500 text-center">{error}</p>}
                     
